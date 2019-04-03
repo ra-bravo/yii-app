@@ -14,7 +14,8 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?= Yii::$app->formatter->locale = 'es-MX' ?>"> 
+<!-- Yii::$app->language ?  -->
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +26,10 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
+<?php 
+    Yii::$app->formatter->locale = 'es-MX'; 
+    
+?>
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -38,9 +42,22 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Inicio', 'url' => ['/']],
+            ['label' => 'Movimientos', 'url' => ['/'],
+                'items' => [
+                    ['label' => 'Captura Solicitudes', 'url' => ['/solicitudes/create']],
+                    ['label' => 'Turnar Solicitudes', 'url' => ['/turno-sujeto/create']],
+                    ['label' => 'Recursos', 'url' => ['/']],
+                ]],
+            ['label' => 'Catalogo', 'url' => ['/'], 
+                'items' => [
+                    ['label' => 'Responsables', 'url' => ['/responsable/']],
+                    ['label' => 'Sujeto Obligados', 'url' => ['/sujeto-obligado/']],
+                    ['label' => 'Tipo de Sujeto', 'url' => ['/tipo-sujeto/']],
+                    ['label' => 'Regiones', 'url' => ['/regiones/']],
+                 ]],
+            // ['label' => 'About', 'url' => ['/site/about']],
+            //['label' => 'Usarios', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -57,8 +74,8 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
-
     <div class="container">
+        <?php echo Yii::$app->formatter->asDate('now');?>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -69,9 +86,9 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; CUTAI-UV <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <!--<p class="pull-right"><?= Yii::powered() ?></p>-->
     </div>
 </footer>
 

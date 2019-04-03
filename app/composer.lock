@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc7a8cdcef199b8ae2c984c1e3e94b51",
+    "content-hash": "ea2d7a540291d977c468b95c140f37f5",
     "packages": [
+        {
+            "name": "beaten-sect0r/yii2-flatpickr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Beaten-Sect0r/yii2-flatpickr.git",
+                "reference": "84500928446c6920e522da8952a6ad073ebe27c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Beaten-Sect0r/yii2-flatpickr/zipball/84500928446c6920e522da8952a6ad073ebe27c9",
+                "reference": "84500928446c6920e522da8952a6ad073ebe27c9",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/flatpickr": "^3.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "bs\\Flatpickr\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Volkov",
+                    "email": "beatensect0r@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Datetime picker widget for Yii2 framework",
+            "keywords": [
+                "datetime picker",
+                "extension",
+                "flatpickr",
+                "yii2"
+            ],
+            "time": "2018-04-10T17:49:03+00:00"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.7",
@@ -22,6 +66,69 @@
             },
             "require": {
                 "bower-asset/jquery": ">=1.9.1,<4.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/bootstrap-datepicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uxsolutions/bootstrap-datepicker.git",
+                "reference": "2a54f44e54ea7c3ac7bfdf7d42801535e56ad2a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uxsolutions/bootstrap-datepicker/zipball/2a54f44e54ea7c3ac7bfdf7d42801535e56ad2a1",
+                "reference": "2a54f44e54ea7c3ac7bfdf7d42801535e56ad2a1",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7.1,<4.0.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "Apache-2.0"
+            ],
+            "time": "2018-11-06T16:08:02+00:00"
+        },
+        {
+            "name": "bower-asset/bootstrap-daterangepicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dangrossman/daterangepicker.git",
+                "reference": "bc645d93e837905dcd38b04b8d9123978ea9f571"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dangrossman/daterangepicker/zipball/bc645d93e837905dcd38b04b8d9123978ea9f571",
+                "reference": "bc645d93e837905dcd38b04b8d9123978ea9f571",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.1,<4.0",
+                "bower-asset/moment": ">=2.9.0"
+            },
+            "type": "bower-asset",
+            "time": "2018-10-31T21:43:36+00:00"
+        },
+        {
+            "name": "bower-asset/flatpickr",
+            "version": "v3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flatpickr/flatpickr.git",
+                "reference": "320f6a01a51762b2a6b70d404c64ffd4243a8ba4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flatpickr/flatpickr/zipball/320f6a01a51762b2a6b70d404c64ffd4243a8ba4",
+                "reference": "320f6a01a51762b2a6b70d404c64ffd4243a8ba4",
+                "shasum": null
             },
             "type": "bower-asset",
             "license": [
@@ -55,7 +162,7 @@
             "version": "3.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
             },
             "dist": {
@@ -68,6 +175,48 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/moment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:moment/moment.git",
+                "reference": "2e2a5b35439665d4b0200143d808a7c26d6cd30f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moment/moment/zipball/2e2a5b35439665d4b0200143d808a7c26d6cd30f",
+                "reference": "2e2a5b35439665d4b0200143d808a7c26d6cd30f",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-06-01T06:45:43+00:00"
         },
         {
             "name": "bower-asset/punycode",
@@ -84,6 +233,23 @@
                 "shasum": null
             },
             "type": "bower-asset"
+        },
+        {
+            "name": "bower-asset/smalot-bootstrap-datetimepicker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smalot/bootstrap-datetimepicker.git",
+                "reference": "5972a5ac597a51cb1f6a6bc3d861cdde124276d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smalot/bootstrap-datetimepicker/zipball/5972a5ac597a51cb1f6a6bc3d861cdde124276d0",
+                "reference": "5972a5ac597a51cb1f6a6bc3d861cdde124276d0",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "time": "2018-06-21T18:01:41+00:00"
         },
         {
             "name": "bower-asset/yii2-pjax",
@@ -483,6 +649,67 @@
             "time": "2018-08-25T10:44:34+00:00"
         },
         {
+            "name": "yiisoft/yii2-jui",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-jui.git",
+                "reference": "49d2f37852f5b9ce6cf43b2467c77bdb6710c340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/49d2f37852f5b9ce6cf43b2467c77bdb6710c340",
+                "reference": "49d2f37852f5b9ce6cf43b2467c77bdb6710c340",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-ui": "~1.12.1",
+                "yiisoft/yii2": "~2.0.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<7"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\jui\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com"
+                },
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru"
+                }
+            ],
+            "description": "The Jquery UI extension for the Yii framework",
+            "keywords": [
+                "jQuery UI",
+                "yii2"
+            ],
+            "time": "2019-02-18T21:12:42+00:00"
+        },
+        {
             "name": "yiisoft/yii2-swiftmailer",
             "version": "2.0.7",
             "source": {
@@ -531,6 +758,55 @@
                 "yii2"
             ],
             "time": "2017-05-01T08:29:00+00:00"
+        },
+        {
+            "name": "zhuravljov/yii2-datetime-widgets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zhuravljov/yii2-datetime-widgets.git",
+                "reference": "cfad2d1a18da4f81f393b4a7468d799e29bd6feb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zhuravljov/yii2-datetime-widgets/zipball/cfad2d1a18da4f81f393b4a7468d799e29bd6feb",
+                "reference": "cfad2d1a18da4f81f393b4a7468d799e29bd6feb",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap-datepicker": "*",
+                "bower-asset/bootstrap-daterangepicker": "*",
+                "bower-asset/moment": "*",
+                "bower-asset/smalot-bootstrap-datetimepicker": "*",
+                "php": ">=5.5.0",
+                "yiisoft/yii2": "~2.0.0",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "zhuravljov\\yii\\widgets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Zhuravlev",
+                    "email": "zhuravljov@gmail.com"
+                }
+            ],
+            "description": "Datetime widgets for Yii2.",
+            "keywords": [
+                "DateTimePicker",
+                "datepicker",
+                "daterangepicker",
+                "widget",
+                "yii"
+            ],
+            "time": "2017-08-09T23:01:37+00:00"
         }
     ],
     "packages-dev": [
@@ -2977,7 +3253,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "zhuravljov/yii2-datetime-widgets": 20,
+        "yiisoft/yii2-jui": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

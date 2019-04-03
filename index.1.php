@@ -1,0 +1,3 @@
+msq <?php
+    phpinfo();
+?>
